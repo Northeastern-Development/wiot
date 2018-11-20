@@ -1,0 +1,12 @@
+/**
+ * partials/wrapper
+ * ---
+ */
+
+
+.wrapper{
+  max-width: $wrapper-width;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

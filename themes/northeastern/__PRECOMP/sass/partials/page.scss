@@ -1,0 +1,75 @@
+/**
+ * partials/page
+ * ---
+ */
+
+
+main{
+  width: 100%;
+  margin: (nth($header-height,1) + $globalnav-height + nth($gutter,1)) 0 0 0;
+  flex: 1 0 auto;
+  & > section{
+    width: nth($content-width,2);
+    margin: 0 auto nth($gutter,1) auto;
+    clear: both;
+    &.fullwidth{
+      width: 100%;
+      margin: 0 0 nth($gutter,1) 0;
+    }
+    & > article{
+      & > table{
+        & tr{
+          & td{
+            &:first-child{
+              padding: 0 nth($gutter,1) 0 0;
+              margin: 0 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 960px){
+    & > section{
+      & > article{
+        & > table{
+          & tr{
+            & td{
+              width: 100% !important;
+              display: block;
+              &:first-child{
+                padding: 0 0 0 0;
+                margin: 0 0 nth($gutter,2) 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 600px){
+    margin: (nth($header-height,2) + $globalnav-height + nth($gutter,2)) 0 nth($gutter,2) 0;
+    & > section{
+      width: auto;
+      margin: 0 nth($gutter,3) nth($gutter,2) nth($gutter,3);
+      &.fullwidth{
+        margin: 0 0 nth($gutter,2) 0;
+      }
+    }
+  }
+
+
+
+
+
+}

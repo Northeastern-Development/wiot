@@ -1,0 +1,45 @@
+/**
+ * partials/footer
+ * ---
+ */
+
+ footer{
+   background: rgba($brand_colors-grayW,1.0);
+   min-height: 50px;
+   flex: none;
+   width: $wrapper-width;
+   padding: nth($gutter,1) nth($gutter,1) nth($gutter,1) nth($gutter,1);
+   margin: 0 0 0 0;
+    clear: both;
+    & > div{
+      float: left;
+      width: auto;
+      & > p{
+        & > a{
+          color: rgba($brand_colors-black,1.0);
+          border-bottom: solid rgba($brand_colors-red,1.0) 1px;
+          &:hover{
+            color: rgba($brand_colors-red,1.0);
+          }
+        }
+      }
+      &.logo{
+        margin: 0 nth($gutter,1) 0 0;
+        & > svg{
+          height: 40px;
+        }
+      }
+    }
+
+
+
+  @media only screen and (max-width: 600px){
+    padding: nth($gutter,2) nth($gutter,3) nth($gutter,2) nth($gutter,3);
+    margin: 0 0 0 0;
+  }
+
+
+
+
+
+ }
